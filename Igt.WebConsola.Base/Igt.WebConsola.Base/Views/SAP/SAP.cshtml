@@ -1,0 +1,126 @@
+﻿@model Igt.WebConsola.Base.Models.ConfiguracionDBModel
+
+@{
+    ViewData["Title"] = "SAP";
+}
+
+<h2>Configuración de conexión a SAP.</h2>
+
+<div>
+
+    <img src="~/images/LogoFin1.png" class="img-rounded" alt="Cinque Terre" width="200" height="100">
+    <h4></h4>
+    @if (TempData["SM"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SM"]
+        </div>
+    }
+    @if (TempData["EM"] != null)
+    {
+        <div class="alert alert-warning">
+            @TempData["EM"]
+        </div>
+    }
+
+    <hr />
+    <h4>Ingrese los parámetros de conexión a SAP.</h4>
+    @using (Html.BeginForm("Save", "SAP", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="text-right">
+                @Html.LabelFor(model => model.Server, "IP Servidor (Service Layer): ", htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.Server, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Server, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="text-right">
+                @Html.LabelFor(model => model.Port, "Puerto Servidor (Service Layer): ", htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.Port, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Port, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class=" text-right">
+                @Html.LabelFor(model => model.DBHana, "Nombre Base de Datos SAP:", htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.DBHana, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DBHana, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="text-right">
+                @Html.LabelFor(model => model.UserHana, "Usuario SAP:", htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.UserHana, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserHana, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PasswordHana, "Contraseña SAP:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.PasswordHana, new { htmlAttributes = new { @class = "form-control",Type="password" } })
+                @Html.ValidationMessageFor(model => model.PasswordHana, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.DNS, "Servidor DSN:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.DNS, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DNS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <p></p>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-12">
+                @if (!string.IsNullOrEmpty(Model.Server))
+                {
+                    <input type="submit" value="Guardar" formaction="SaveSap" class="btn btn-primary btn-lg" />
+                }
+                else
+                {
+                    <input type="submit" value="Guardar" formaction="SaveSap" class="btn btn-primary btn-lg" disabled="disabled" />
+                }
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10 text-success">
+                @ViewBag.Msg
+            </div>
+        </div>
+    </div>
+
+    }
+</div>
+<script type="text/javascript">
+         <!--
+    function getConfirmation() {
+        var retVal = confirm("Está seguro que desea editar los parámetros de conexión a SAP?");
+        if (retVal == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    //-->
+</script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

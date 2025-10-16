@@ -1,0 +1,121 @@
+﻿@model Igt.WebConsola.Base.Models.ConfiguracionDBModel
+
+@{
+    ViewBag.Title = "Intermedia";
+}
+
+
+
+<h2>Configuración de conexión a la base de datos intermedia.</h2>
+<h4></h4>
+<div>
+
+    <img src="~/images/Database.png" class="img-rounded" alt="Cinque Terre">
+    @if (TempData["SM"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SM"]
+        </div>
+    }
+    @if (TempData["EM"] != null)
+    {
+        <div class="alert alert-warning">
+            @TempData["EM"]
+        </div>
+    }
+
+    <hr />
+    <h4>Ingrese los parámetros de conexión a la base de datos intermedia.</h4>
+    @using (Html.BeginForm("Save", "Intermedia", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="text-right">
+                    @Html.LabelFor(model => model.Server, "IP Servidor: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.Server, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Server, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="text-right">
+                    @Html.LabelFor(model => model.Port, "Puerto Servidor:", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.Port, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Port, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class=" text-right">
+                    @Html.LabelFor(model => model.DBHana, "Nombre Base de Datos:", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.DBHana, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DBHana, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="text-right">
+                    @Html.LabelFor(model => model.UserHana, "Usuario BD:", htmlAttributes: new { @class = "control-label col-md-2" })
+                </div>
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.UserHana, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserHana, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.PasswordHana, "Contraseña BD:", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.PasswordHana, new { htmlAttributes = new { @class = "form-control", Type = "password" } })
+                    @Html.ValidationMessageFor(model => model.PasswordHana, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.DNS, "Servidor DSN:", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.EditorFor(model => model.DNS, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DNS, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <p></p>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-12">
+                    <input type="submit" value="Guardar" formaction="Save" class="btn btn-primary btn-lg" onclick="javascript:return getConfirmation();" />
+                    <input type="submit" value="Editar" formaction="Editar" class="btn btn-secondary btn-lg" />
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10 text-success">
+                    @ViewBag.Msg
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+<script type="text/javascript">
+
+    function getConfirmation() {
+        var retVal = confirm("¿Desea crear una base de datos nueva? \n" +
+            "Esta acción generará una base de datos con las tablas y parámetros iniciales, y se eliminará cualquier otra información. Si existe una base de datos con el mismo nombre será sobrescrita.",
+            "Base de datos nueva");
+        if (retVal == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

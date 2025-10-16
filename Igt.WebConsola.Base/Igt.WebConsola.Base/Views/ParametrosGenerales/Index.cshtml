@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Igt.WebConsola.Base.Models.ParametroGeneralModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Configuración Parametros Generales.</h2>
+
+<p>
+    <a class="btn btn-primary align-self-end" asp-action="Create">Nuevo Parametro General.</a>
+</p>
+
+    @if (TempData["SM"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SM"]
+        </div>
+    }
+    @if (TempData["EM"] != null)
+    {
+        <div class="alert alert-warning">
+            @TempData["EM"]
+        </div>
+    }
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Valor)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Descripcion)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Codigo }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.Codigo }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.Codigo })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

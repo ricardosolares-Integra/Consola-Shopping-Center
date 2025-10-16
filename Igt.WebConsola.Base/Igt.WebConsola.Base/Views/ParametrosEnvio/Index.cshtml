@@ -1,0 +1,195 @@
+﻿@model Igt.WebConsola.Base.Models.ParametrosEnvioModel
+@{
+    ViewData["Title"] = "Parametros de Envio";
+}
+
+@if (TempData["SM"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SM"]
+    </div>
+}
+@if (TempData["EM"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["EM"]
+    </div>
+}
+
+<div class="content">
+    <div class="container-fluid">
+
+        <form method="post" action="#">
+            @Html.AntiForgeryToken()
+            <input name="Accion" type="hidden" value="@ViewBag.Accion">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="card stacked-form">
+                        <div class="card-header">
+                            <h4 class="card-title">Parametros de Envio</h4>
+                        </div>
+                        <hr />
+                        @Html.HiddenFor(m => Model.IdServicio)
+                        <div class="card-body ">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="container col-md-5">
+                                        <div class="form-group has-label">
+                                            <label asp-for="TipoEnvio"></label>
+                                            <select asp-for="TipoEnvio" class="selectpicker form-control" id="TipoEnvio" data-style="btn btn-outline-secondary btn-outline" onchange="bloquear()" disabled="@(ViewBag.Accion.Equals("Ver"))">
+                                                <option value="1" selected>Automatico</option>
+                                                <option value="0">Manual</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group has-label" id="ejecucion">
+                                            <label asp-for="Ejecucion"></label>
+                                            <select asp-for="Ejecucion" class="selectpicker form-control" id="Ejecucion" data-style="btn btn-outline-secondary btn-outline" onchange="bloquear()" disabled="@(ViewBag.Accion.Equals("Ver"))">
+                                                <option value="1" selected>Diario</option>
+                                                <option value="2">Semanal</option>
+                                                <option value="3">Inmediato</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group has-label" id="diasSemana">
+                                            <label>Seleccione los Días en que se realizara el envio</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[1].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[1].Text
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[2].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[2].Text
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[3].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[3].Text
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[4].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[4].Text
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[5].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[5].Text
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[6].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[6].Text
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input asp-for="ListaDiasEjecucion[0].Selected" class="form-check-input me-1" disabled="@(ViewBag.Accion.Equals("Ver"))" type="checkbox">
+                                                            @Model.ListaDiasEjecucion[0].Text
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="form-group has-label" id="tiempoespera">
+                                            <label asp-for="TiempoEspera"></label>
+                                            <input type="number" asp-for="TiempoEspera" class="form-control" readonly="@(ViewBag.Accion.Equals("Ver"))" />
+                                        </div>
+                                    </div>
+
+                                    <div class="container col-md-5" id="horario">
+                                        @for (int i = 0; i < Model.Horarios.Count; i++)
+                                        {
+                                            <div class="form-group has-label" id="horario">
+                                                <label for="">Horario @(i + 1)</label>
+                                                <div class="@(ViewBag.Accion.Equals("Ver")||i==0 ?"":"input-group")">
+                                                    <input type="time" asp-for="Horarios[i]" class="form-control" aria-hidden="true" readonly="@(ViewBag.Accion.Equals("Ver"))" />
+                                                    @if (ViewBag.Accion != "Ver" && i != 0)
+                                                    {
+                                                        <div class="input-group-btn">
+                                                            <button type="submit" asp-action="RemoverHorario" asp-route-id="@i" class="btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                                                        </div>
+                                                    }
+                                                </div>
+                                            </div>
+                                        }
+
+                                        @if (ViewBag.Accion != "Ver")
+                                        {
+                                            <button type="submit" asp-action="AgregarHorario" class="btn btn-fill btn-primary">Agregar Horario</button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-footer ">
+                            @switch (ViewBag.Accion)
+                            {
+                                case "Crear":
+                                    <button type="submit" asp-action="Create" class="btn btn-fill btn-primary">Guardar</button>
+                                    break;
+                                case "Editar":
+                                    <button type="submit" asp-action="Editar" class="btn btn-fill btn-primary">Guardar</button>
+                                    break;
+                                case "Ver":
+                                    <a asp-action="Editar" asp-route-id="@Model.IdServicio" class="btn btn-fill btn-default">Editar</a>
+                                    break;
+                            }
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script>
+
+        //block = visible
+        function bloquear() {
+            var TipoEnvio = document.getElementById("TipoEnvio");
+            var Ejecucion = document.getElementById("Ejecucion");
+            if (TipoEnvio.value == "0") {
+                document.getElementById("ejecucion").style.display = "none";
+                document.getElementById("diasSemana").style.display = "none";
+                document.getElementById("horario").style.display = "none";
+                document.getElementById("tiempoespera").style.display = "none";
+            }
+            else {
+                document.getElementById("ejecucion").style.display = "block";
+
+                if (Ejecucion.value == "1") {
+                    document.getElementById("diasSemana").style.display = "none";
+                    document.getElementById("horario").style.display = "block";
+                    document.getElementById("tiempoespera").style.display = "none";
+                }
+                else if (Ejecucion.value == "2") {
+                    document.getElementById("diasSemana").style.display = "block";
+                    document.getElementById("horario").style.display = "block";
+                    document.getElementById("tiempoespera").style.display = "none";
+                }
+                else if (Ejecucion.value == "3") {
+                    document.getElementById("diasSemana").style.display = "none";
+                    document.getElementById("horario").style.display = "none";
+                    document.getElementById("tiempoespera").style.display = "block";
+                }
+
+            }
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            bloquear();
+        });
+    </script>
+}

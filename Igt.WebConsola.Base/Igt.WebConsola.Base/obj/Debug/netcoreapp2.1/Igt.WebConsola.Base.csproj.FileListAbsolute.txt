@@ -1,0 +1,99 @@
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Igt.WebServices.Base.xml
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.deps.json
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.runtimeconfig.json
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.runtimeconfig.dev.json
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.dll
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.pdb
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.Views.dll
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.Views.pdb
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.AssemblyInfoInputs.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.AssemblyInfo.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.csproj.CoreCompileInputs.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorAssemblyInfo.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorAssemblyInfo.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.TagHelpers.input.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.TagHelpers.output.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorCoreGenerate.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Bitacora\Mostrar.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\DocumentosPendientes\DocumentosPendientes.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Intermedia\Intermedia.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosEnvio\Index.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Create.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Delete.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Details.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Edit.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Index.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\SAP\SAP.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorTargetAssemblyInfo.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorTargetAssemblyInfo.cs
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.Views.pdb
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.dll
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.pdb
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.genruntimeconfig.cache
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.csproj.CopyComplete
+C:\Users\Consutor-SFA-Etalent\source\repos\083 - Interfaz Sistemas Externos y SAP B1 - Lai Lai\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.csproj.AssemblyReference.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Igt.WebServices.Base.xml
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.deps.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.runtimeconfig.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.runtimeconfig.dev.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.dll
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.pdb
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.Views.dll
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\WebConsolaLaiLai.Views.pdb
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.csproj.AssemblyReference.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.AssemblyInfoInputs.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.AssemblyInfo.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.csproj.CoreCompileInputs.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorAssemblyInfo.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorAssemblyInfo.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.TagHelpers.input.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.TagHelpers.output.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorCoreGenerate.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Bitacora\Mostrar.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\DocumentosPendientes\DocumentosPendientes.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Intermedia\Intermedia.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosEnvio\Index.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Create.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Delete.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Details.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Edit.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\ParametrosGenerales\Index.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\SAP\SAP.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorTargetAssemblyInfo.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.RazorTargetAssemblyInfo.cs
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.Views.pdb
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.dll
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\WebConsolaLaiLai.pdb
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.genruntimeconfig.cache
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\obj\Debug\netcoreapp2.1\Igt.WebConsola.Base.csproj.CopyComplete
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\web.config
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\appsettings.Development.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\appsettings.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\WebConsolaLaiLai.deps.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\WebConsolaLaiLai.runtimeconfig.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\wwwroot\lib\bootstrap\.bower.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\wwwroot\lib\jquery-validation-unobtrusive\.bower.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\wwwroot\lib\jquery-validation\.bower.json
+D:\Users\ricardo.solares\Desktop\Base WS\Igt.WebConsola.Base\Igt.WebConsola.Base\bin\Debug\netcoreapp2.1\Publicacion\wwwroot\lib\jquery\.bower.json

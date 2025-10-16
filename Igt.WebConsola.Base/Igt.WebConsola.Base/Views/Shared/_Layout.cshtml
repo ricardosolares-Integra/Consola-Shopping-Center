@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consola Monitoreo: 000 - Soluciones Base IGT</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+
+    @RenderSection("Head", required: false)
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Soluciones Base IGT</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Bitacora" asp-action="Bitacora" class="display-3">Bitacora</a></li>
+                    <li><a asp-area="" asp-controller="DocumentosPendientes" asp-action="DocumentosPendientes" class="display-3">Documentos Pendientes</a></li>
+                    <li><a asp-area="" asp-controller="ParametrosEnvio" asp-action="Index" class="display-3">Parametros de Envio</a></li>
+                    <li><a asp-area="" asp-controller="ParametrosGenerales" asp-action="Index" class="display-3">Parametros Generales</a></li>
+                    <li><a asp-area="" asp-controller="Intermedia" asp-action="Intermedia" class="display-3">Parametros BD Intermedia</a></li>
+                    <li><a asp-area="" asp-controller="SAP" asp-action="SAP" class="display-3">Parametros SAP</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Envio Manual<span class="caret"></span></a>
+                        <ul class="dropdown-menu drop">
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div>&copy; 2022 - Integra SAP</div> <div style="float: left;">Version: 1.0.0.0</div>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    <script>
+        function CargarEnvioManual()
+        {
+            $.ajax({
+                url: '@Url.Action("listaObj", "Home")',
+                type: 'GET',
+                cache: false,
+                timeout: 1000 * 60 * 2,
+                success: function (data) {
+                    data.forEach(element => $(".drop").append('<li><a  onclick="EnvioManual('+element.value+')">'+element.text+'</a></li>'));
+                },
+                error: function (ex) {
+                    console.log('No se pudo obtener Los Objetos');
+                    console.log(ex);
+                }
+            });
+        }
+
+        function EnvioManual(id) {
+            $.ajax({
+                url: '@Url.Action("EnvioManual", "Home")',
+                type: 'GET',
+                cache: false,
+                timeout: 1000 * 60 * 2,
+                data: { id },
+                success: function (data) {
+                    alert(data);
+                },
+                error: function (ex) {
+                    console.log('No se pudo obtener Los Objetos');
+                    console.log(ex);
+                }
+            });
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            CargarEnvioManual();
+        });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
+    
+
+</body>
+</html>
+

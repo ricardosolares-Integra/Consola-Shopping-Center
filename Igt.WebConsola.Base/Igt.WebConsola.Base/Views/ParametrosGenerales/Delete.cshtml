@@ -1,0 +1,50 @@
+﻿@model Igt.WebConsola.Base.Models.ParametroGeneralModel
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+    @if (TempData["SM"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SM"]
+        </div>
+    }
+    @if (TempData["EM"] != null)
+    {
+        <div class="alert alert-warning">
+            @TempData["EM"]
+        </div>
+    }
+
+<h3>Esta seguro que desea eliminar este item?</h3>
+<div>
+    <h4>ParametroGeneral</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <button type="submit" value="Delete" class="btn btn-primary">Eliminar</button> |
+        <a asp-action="Index">Regresar al Listado.</a>
+    </form>
+</div>
